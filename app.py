@@ -19,19 +19,19 @@ import pytz
 import json
 from prophet import Prophet
 from sklearn.metrics import r2_score
-import redis
+#import redis
 # from flask_compress import Compress
 
-REDIS_HOST = os.getenv('REDIS_HOST', 'localhost')
-REDIS_PORT = int(os.getenv('REDIS_PORT', 6379))
-REDIS_PASSWORD = os.getenv('REDIS_PASSWORD', None)
-redis_client = redis.StrictRedis(
-    host=REDIS_HOST,
-    port=REDIS_PORT,
-    password=REDIS_PASSWORD,
-    decode_responses=True  # Get string responses instead of bytes
-)
-print(redis_client)
+#REDIS_HOST = os.getenv('REDIS_HOST', 'localhost')
+#REDIS_PORT = int(os.getenv('REDIS_PORT', 6379))
+#REDIS_PASSWORD = os.getenv('REDIS_PASSWORD', None)
+#redis_client = redis.StrictRedis(
+    #host=REDIS_HOST,
+    #port=REDIS_PORT,
+    #password=REDIS_PASSWORD,
+    #decode_responses=True  # Get string responses instead of bytes
+#)
+#print(redis_client)
 # print(f'************{redis_client.ping()}')
 
 
