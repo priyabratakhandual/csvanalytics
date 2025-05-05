@@ -14,7 +14,7 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose the Flask app port
-EXPOSE 6000
+EXPOSE 5001
 
 # Copy Supervisor configuration
 COPY supervisor.conf /etc/supervisor/conf.d/supervisor.conf
