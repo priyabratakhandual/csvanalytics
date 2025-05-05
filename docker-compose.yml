@@ -11,8 +11,8 @@ services:
     volumes:
       - .:/app
     networks:
-      - csv_network
+      - csv_network  # Use csv_network here
 
 networks:
-  flask_network:
-    driver: bridge
+  csv_network:
+    driver: bridge  # This is your defined network
